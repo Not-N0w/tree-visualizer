@@ -9,13 +9,15 @@ Supported tree types include:
 - **Splay Tree**
 - **Treap** (Cartesian Tree)
 
-<div align="center">
-  <img src="screenshots/1.png" alt="Tree Display" width="600"/>
-  <br/>
-  <img src="screenshots/2.png" alt="Tree Interaction" width="600"/>
-  <br/>
-  <img src="screenshots/video.gif" alt="Demo Animation" width="600"/>
-</div>
+<p align="center">
+  <img src="screenshots/1.png" alt="Main Window" width="48%" style="margin-right: 2%;" />
+  <img src="screenshots/2.png" alt="Conversion Example" width="48%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/video.gif" alt="App Demo" width="600"/>
+</p>
+
 
 ---
 
