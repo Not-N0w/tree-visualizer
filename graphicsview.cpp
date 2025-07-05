@@ -56,7 +56,7 @@ void GraphicsView::wheelEvent(QWheelEvent *event)
           }
         }
     }
-} //UwU
+}
 
 void GraphicsView::toDefault() {
     scale_ = 1;

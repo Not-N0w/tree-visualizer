@@ -339,11 +339,14 @@ void paintTree(Node_t* x, QGraphicsScene* &scene) {
     QGraphicsEllipseItem *ellipse = new QGraphicsEllipseItem(x->x, x->y,NODE_DIAMETR, NODE_DIAMETR);
     ellipse->setBrush(QBrush(Qt::white));
     QGraphicsTextItem* text= new QGraphicsTextItem(QString::number(x->data));
-
+    text->setDefaultTextColor(Qt::black);
+    text->setZValue(100);
     text->setPos(ellipse->boundingRect().center() - text->boundingRect().center() + QPointF(0,-8));
 
     QGraphicsTextItem* textPrior= new QGraphicsTextItem(QString::number(x->priority));
     textPrior->setPos(ellipse->boundingRect().center() - textPrior->boundingRect().center() + QPointF(0,8));
+    textPrior->setDefaultTextColor(Qt::black);
+    textPrior->setZValue(100);
     QFont f = text->font();
     f.setBold(1);
     text->setFont(f);

@@ -401,6 +401,8 @@ void RBTree::paintTree(Node_rb* x, QGraphicsScene* &scene) {
     ellipse->setBrush(QBrush(Qt::white));
     QGraphicsTextItem* text= new QGraphicsTextItem(QString::number(x->data));
     text->setPos(ellipse->boundingRect().center() - text->boundingRect().center());
+    text->setDefaultTextColor(Qt::black);
+    text->setZValue(100);
     scene->addItem(ellipse);
     scene->addItem(text);
     if(x->parent) {
